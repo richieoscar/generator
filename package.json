@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=10.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/richieoscar/generator.git"
