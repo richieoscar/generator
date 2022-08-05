@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PassGen</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+        
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="spacer hed">Password Generator</h1>
+            <h4 class="subH">The most secure password provider</h4>
+            <br/>
+            <div class="col-md-4 text start">
+                <label class="form-label">Alphabet</label>
+                <input type="text" id="alph" class="form-control" placeholder="No of Alphabet"/>
+                <label class="form-label pt-4">Character</label>
+                <input type="text"  id="charc" class="form-control"placeholder="No of Character"/>
+                <label class="form-label pt-4">Digit</label>
+                <input type="text" id="digits"  class="form-control"placeholder="No of Digit"/>
+                <button id="btn"class="btn btn-warning text-white mt-5">Generate Password</button>
+            </div>
+            <div id ="alrt" class="col-md-4 alert alert-success mt-5" role="alert">
+              <h5 class="alert-heading">Password Generated</h5>
+              <p id="pass"></p>
+              <hr>
+              <p id="remark" class="alert-remarks"></p>
+            </div>
+        </div>
+        <div class="col text-center">
+            <img src="./img/images.png" id="image" class="img-fluid" alt="secure"/>
+        </div>
+    </div>
+    </div>
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>

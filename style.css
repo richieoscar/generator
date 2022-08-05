@@ -1,0 +1,27 @@
+
+.subH{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hed{
+    font-family: serif;
+    color: #967904;
+    
+}
+
+.spacer{
+    margin-top: 50px;
+    padding: auto;
+}
+.dis{
+    display: block;
+}
+.alignl{
+    text-align: left;
+}
+
+#image{
+    margin-top: 25%;
+    align-self: center;
+}
