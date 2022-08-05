@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build",
-    "build": "nuxt build"
+    "build": "npm run build"
   },
   "engines": {
     "npm": ">=6.0.0",
