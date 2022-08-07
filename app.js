@@ -8,7 +8,6 @@ alrt.style.display = "none";
 
 button.addEventListener("click", () => {
     if(num1.value.length ===0 || num2.value.length ===0  || num3.value.length ===0){
-        alert("Input Feilds are required")
         return;
     }
     let pass = generatePassword(num1, num2, num3);

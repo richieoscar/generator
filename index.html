@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>PassGen</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,43 +9,104 @@
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+              <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png"/></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Your email">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><b>Subscribe</b></button>
+                    </form>
+                </div>
+          </div>
+        </nav>
         
-    <div class="row">
-        <div class="col-md-6">
-            <h1 class="spacer hed">Password Generator</h1>
-            <h4 class="subH">The most secure password provider</h4>
-            <br/>
-            <div class="col-md-4 text start">
-                <label class="form-label">Alphabet</label>
-                <input type="text" id="alph" class="form-control" placeholder="No of Alphabet"/>
-                <label class="form-label pt-4">Character</label>
-                <input type="text"  id="charc" class="form-control"placeholder="No of Character"/>
-                <label class="form-label pt-4">Digit</label>
-                <input type="text" id="digits"  class="form-control"placeholder="No of Digit"/>
-                <button id="btn"class="btn btn-warning text-white mt-5">Generate Password</button>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="spacer hed">Password Generator</h1>
+                <br />
+                <form class="row g-3 needs-validation">
+                    <div class="text start">
+                        <label class="form-label">Alphabet</label>
+                        <input type="text" id="alph" class="form-control" placeholder="No of Alphabet" required/>
+                        <label class="form-label pt-4">Character</label>
+                        <input type="text" id="charc" class="form-control" placeholder="No of Character" required />
+                        <label class="form-label pt-4">Digit</label>
+                        <input type="text" id="digits" class="form-control" placeholder="No of Digit" required/>
+                        <button id="btn" class="btnn mt-5">Generate Password</button>
+                    </div>
+                </form>
+               
+
             </div>
-            <div id ="alrt" class="col-md-4 alert alert-success mt-5" role="alert">
-              <h5 class="alert-heading">Password Generated</h5>
-              <p id="pass"></p>
-              <hr>
-              <p id="remark" class="alert-remarks"></p>
+            <div class="col text-center">
+                <img src="./img/images.png" id="image" class="img-fluid" alt="secure" />
             </div>
         </div>
-        <div class="col text-center">
-            <img src="./img/images.png" id="image" class="img-fluid" alt="secure"/>
+        <div class="row">
+            <div id="alrt" class="col-md-4 alert alert-success mt-5" role="alert">
+                <h5 class="alert-heading">Password Generated</h5>
+                <p id="pass"></p>
+                <hr>
+                <p id="remark" class="alert-remarks"></p>
+            </div>
+        </div>
+    
+        <div class="row mt-5 spacer">
+            <div class="spacer">
+                <img src="./img/dev.jpg" class="img-secure" />
+                <h3 class="txt-col">Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                    orem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                    orem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                </p>
+            </div>
+            <div class="spacer">
+                <img src="./img/login.jpg" class="img-secure" />
+                <h3 class="txt-col">Secret Logins</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                    orem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                    orem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam eaque quas, voluptatem atque
+                    e?
+                </p>
+            </div>
         </div>
     </div>
-    </div>
-      
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
