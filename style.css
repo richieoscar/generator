@@ -18,8 +18,12 @@
 .dis{
     display: block;
 }
-.alignl{
-    text-align: left;
+.algn{
+    text-align: justify;
+}
+
+#ro{
+    margin: 10px;
 }
 
 #image{
