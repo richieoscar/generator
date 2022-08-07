@@ -6,10 +6,11 @@ let alrt = document.getElementById("alrt");
 let remark = document.getElementById("remark");
 alrt.style.display = "none";
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
     if(num1.value.length ===0 || num2.value.length ===0  || num3.value.length ===0){
         return;
     }
+    e.preventDefault();
     let pass = generatePassword(num1, num2, num3);
     document.getElementById("pass").innerHTML = pass;
     alrt.style.display = "block";   
